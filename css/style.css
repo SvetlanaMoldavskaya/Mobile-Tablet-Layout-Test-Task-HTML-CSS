@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 720px;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.presentation-container {
+  padding: 20px 20px 0 20px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 100%;
+  /* max-width: 720px; */
+  justify-content: flex-end;
+}
+
+.user-avatar {
+  width: 33%;
+  height: fit-content;
+}
+
+.avatar-cropper {
+  width: 100%;
+  height: 20vh;
+  /* position: center; */
+  overflow: hidden;
+}
+
+.avatar-cropper img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  margin: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.user-info {
+  height: 10vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 66%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 0.8em;
+  color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.user-name {
+  margin-bottom: 5px;
+}
+
+.user-position {
+  margin-bottom: 10px;
+}
+
+.user-status {
+  background-color: #fffbc8;
+  border: solid 1px #b9cad7;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 1em;
+  color: black;
+}
+
+.services-container {
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 66%;
+}
+
+#row1,
+#row4 {
+  border-bottom: solid grey;
+  border-width: 1px 0;
+}
+
+#row1,
+#row5 {
+  font-weight: bold;
+}
+
+#row1 td {
+  padding-bottom: 10px;
+}
+
+#row2 td {
+  padding-top: 10px;
+}
+
+#row4 td {
+  padding-bottom: 10px;
+}
+
+#row5 td {
+  padding-top: 10px;
+}
+
+.progress-bar-1 {
+  background-color: #b1e19b;
+  display: block;
+  width: 75%;
+}
+
+.progress-bar-2 {
+  background-color: #ace2f8;
+  display: block;
+  width: 35%;
+}
+
+.progress-bar-3 {
+  background-color: #ace2f8;
+  display: block;
+  width: 10%;
+}
+
+.feedback-filters {
+  display: flex;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.feedback-filters div a {
+  color: #006699;
+}
+
+.filters {
+  display: flex;
+  width: 50%;
+  align-items: baseline;
+}
+
+.latest-comments {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.feedback-stats {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+.stats img {
+  width: 20px;
+  height: 20px;
+}
+
+.name-date {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.comment-date {
+  font-size: 0.8em;
+  color: grey;
+}
+
+.comment {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #f2fbff;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: #b9cad7 solid 1px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.comment:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 3px 7px;
+  border-color: #f2fbff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -7px;
+  left: 35px;
+}
+
+.comment:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 3px 7px;
+  border-color: #b9cad7 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  top: -8px;
+  left: 35px;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 720px;
+}
+
+.message-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.send-btn button {
+  background-color: #fdd639;
+  color: black;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  width: 50vw;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+input {
+  margin: 0;
+  width: 100%;
+  height: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .user-avatar {
+    width: 50%;
+    height: fit-content;
+  }
+}
